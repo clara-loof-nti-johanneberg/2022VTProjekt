@@ -1,1 +1,91 @@
-/* Denna fil skall innehålla din CSS kod */
+#wrapper {
+    display: grid;
+    grid-template-rows: 100px 100px 200px 200px;
+    border: solid 1px black;
+    width: 100%;
+    grid-template-areas: 
+    'na na na'
+    'm1 m2 m3'
+    'm1 m2 m3'
+    'm1 m2 m3'
+    ;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(34, 114, 114);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: -90vh;
+    background-color: rgb(69, 165, 157);
+    align-items: center;
+    width: 13%;
+}
+
+.navlinks li {
+    list-style: none;
+}
+
+.navlinks a {
+    color: aqua;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: aqua;
+    margin: 5px;
+    border-radius: 10%;
+}
+
+.line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.line2 { 
+    opacity: 0;
+}
+
+.line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+main {
+    background-color: rgb(104, 104, 104);
+    grid-area: m1;
+    height: 100%;
+}
+
+aside {
+    background-color: rgb(61, 82, 128);
+    grid-area: m2;
+    height: 100%;
+}
+
+footer {
+    background-color: cornflowerblue;
+    grid-area: m3;
+    height: 100%;
+}
