@@ -39,6 +39,10 @@ nav {
     width: 13%;
 }
 
+.navActive {
+    transform: translate(100vh);
+}
+
 .navlinks li {
     list-style: none;
 }
@@ -59,15 +63,16 @@ nav {
     border-radius: 10%;
 }
 
-.line1 {
+
+.toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.line2 { 
+.toggle .line2 {
     opacity: 0;
 }
 
-.line3 {
+.toggle .line3 { 
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
