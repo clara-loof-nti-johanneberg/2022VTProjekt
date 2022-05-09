@@ -138,13 +138,5 @@ nav {
     color: white;
 }
 
-#spalt4 {
-    grid-area: m1;
-    width: 70%;
-    height: 500px;
-}
-
-#spalt4 img {
-    width: 70%;
-    height: 500px;
+@media screen and (max-width:700px){
 }
